@@ -1,5 +1,5 @@
 # Gym-Booker
-Post-Covid, many gyms are requiring time slots to be reserved in an attempt to reduce the number of people gathering in one place. Instead of having to worry about forgetting to book the gym, I created this bot to take care of that for me.
+Post-Covid, many gyms are requiring time slots to be reserved in an attempt to reduce the number of people gathering. Instead of having to worry about forgetting to book the gym, I created this bot to take care of that for me.
 
 The program first loads this webpage in a new Google Chrome window.
 
