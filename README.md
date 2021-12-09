@@ -13,3 +13,5 @@ In order to book successfully, first enter your username and password into the a
 The choice of workout can be customized by finding the ID of the workout. This value lies within the xpath when inspecting the html of the desired workout. Once this value is found, simply input the ID into the workout.txt file. The result is that the same workout will be booked for every following day, as the program will increment the ID every day to ensure the correct slot is chosen!
 
 After the program runs successfully, you will receive an email on your student Outlook account confirming the booking type and time.
+
+NOTE: Be sure to add the execution of the program to a crontab file in order to automatically execute every day at a given time.
