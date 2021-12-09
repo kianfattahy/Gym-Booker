@@ -1,7 +1,7 @@
 # Gym-Booker
 Post-Covid, many gyms are requiring time slots to be reserved in an attempt to reduce the number of people gathering. Instead of having to worry about forgetting to book the gym, I created this bot to take care of that for me.
 
-The program first uses Selenium and the Chromedriver to load this webpage in a new Google Chrome window.
+The program first uses Selenium to load this webpage in a new Google Chrome window.
 
 <img width="1142" alt="Screen Shot 2021-12-08 at 8 52 44 PM" src="https://user-images.githubusercontent.com/94335877/145320188-e1930e16-4e9b-428b-915a-f8f590694add.png">
 
