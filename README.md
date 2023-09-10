@@ -1,6 +1,6 @@
 # Gym-Booker
 
-Automate your gym bookings post-Covid with the Gym-Booker bot. With gyms implementing time slot reservations to ensure safety, this bot ensures you never miss your workout schedule.
+Automate your gym bookings post-Covid with the Gym-Booker bot. With the McGill Gym implementing time slot reservations to ensure safety during COVID, this bot ensures you never miss your workout schedule.
 
 ## Overview
 
