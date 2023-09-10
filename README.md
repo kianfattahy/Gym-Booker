@@ -1,17 +1,40 @@
 # Gym-Booker
-Post-Covid, many gyms are requiring time slots to be reserved in an attempt to reduce the number of people gathering. Instead of having to worry about forgetting to book the gym, I created this bot to take care of that for me.
 
-The program first uses Selenium to load this webpage in a new Google Chrome window.
+Automate your gym bookings post-Covid with the Gym-Booker bot. With gyms implementing time slot reservations to ensure safety, this bot ensures you never miss your workout schedule.
 
-<img width="1142" alt="Screen Shot 2021-12-08 at 8 52 44 PM" src="https://user-images.githubusercontent.com/94335877/145320188-e1930e16-4e9b-428b-915a-f8f590694add.png">
+## Overview
 
-After encountering this page, the program goes through a series of clicks using Selenium to navigate the website, input user credentials, and book the desired workout slot.
+Gym-Booker is a bot designed to automate the reservation of gym slots. It uses Selenium to navigate the gym booking platform, input user credentials, and reserve the desired workout slot.
 
-# Booking
-In order to book successfully, first enter your username and password into the appropriate string variable assignments at the beginning of the gym_booker.py file.
+![Gym-Booking Interface](https://user-images.githubusercontent.com/94335877/145320188-e1930e16-4e9b-428b-915a-f8f590694add.png)
 
-The choice of workout can be customized by finding the ID of the workout. This value lies within the xpath when inspecting the html of the desired workout. Once this value is found, simply input the ID into the workout.txt file. The result is that the same workout will be booked for every following day, as the program will increment the ID every day to ensure the correct slot is chosen!
+## Features
 
-After the program runs successfully, you will receive an email on your student Outlook account confirming the booking type and time.
+- **Automated Navigation:** After loading the gym booking page, the bot navigates through the website, clicking the necessary buttons to reach the reservation page.
+- **User Authentication:** The bot can input user credentials to access the booking section.
+- **Dynamic Workout Slot Booking:** It not only books the slot for the day but adjusts the booking ID for subsequent days to ensure your favorite slot is reserved every day.
 
-NOTE: Be sure to add the execution of the program to a crontab file in order to automatically execute every day at a given time.
+## Setup & Usage
+
+### Prerequisites:
+- Python environment with Selenium installed.
+- Google Chrome browser.
+
+### Steps:
+
+1. **User Credentials:** 
+   - Open `gym_booker.py`.
+   - Input your username and password into the appropriate string variables at the top.
+
+2. **Choosing a Workout:** 
+   - Navigate to the gym booking platform and inspect the HTML of the desired workout to find its ID (within the xpath).
+   - Input this ID into the `workout.txt` file. The bot will adjust this ID for subsequent days to ensure the correct slot booking.
+
+3. **Confirmation:** 
+   - Once the bot successfully books a slot, you'll receive a confirmation email on your student Outlook account, detailing the booking type and time.
+
+4. **Automation:** 
+   - For daily automated bookings, add the execution of the `gym_booker.py` program to a crontab file. This will ensure the bot runs at your specified time every day.
+
+## Note
+Make sure your system's Google Chrome version is compatible with the ChromeDriver used by Selenium. Update ChromeDriver if necessary.
